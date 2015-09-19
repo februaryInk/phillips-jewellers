@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %meta{ :content => 'text/html; charset=UTF-8', 'http-equiv' => 'Content-Type' }
+    %title
+      Phillip's Jewelers
+    = stylesheet_link_tag 'application.scss', :media => 'all'
+    = javascript_include_tag 'application.js'
+    = csrf_meta_tags
+  %body{ :class => '#{page_body_class}' }
+    %div#page-wrapper
+      = yield :header if content_for?(:header)
+      %div#flash-container
+        = render partial: 'shared/flash_messages.html.haml'
+      = yield :page_content
+      = yield :footer if content_for?(:footer)
