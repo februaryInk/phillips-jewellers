@@ -4,6 +4,9 @@
 @import 'general/definitions/variables.scss';
 @import 'general/definitions/mixins.scss';
 
+@import 'general/global_modifiers.scss';
+@import 'general/header.scss';
+
 body {
     @include font-family-sans;
 }
@@ -12,4 +15,25 @@ h1 {
     @include font-family-flourish;
     
     font-size: 4em;
+}
+
+h2 {
+    @include font-family-sans;
+    
+    font-size: 1.5em;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: $size-container-width;
+}
+
+.logo-diamond {
+    background-image: image_url('diamond.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 4.8125em;
+    width: 7.9375em;
 }

@@ -1,0 +1,15 @@
+%header
+    %div.header-content.container
+        %div.float-left.vertically-center
+            = link_to root_path, class: 'clearfix logo' do
+                %div.logo-diamond.v
+                %div.display-inline-block
+                    %h1
+                        Phillips Jewelers
+                    %h2.margin-left-1-point-75em
+                        Simply Engaging
+        %nav.header-nav
+            = link_to 'Home', root_path, :class => 'header-link'
+            = link_to 'About Us', about_path, :class => 'header-link'
+            = link_to 'Contact', contact_path, :class => 'header-link'
+            
