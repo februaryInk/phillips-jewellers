@@ -1,0 +1,25 @@
+// POSITIONING
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin vertically-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// TYPOGRAPHY
+
+@mixin font-family-flourish {
+    font-family: 'Edwardian Script ITC', 'Elegant Script Pro', 'Great Vibes', 'Tangerine', cursive
+}
+
+@mixin font-family-sans {
+    font-family: 'Gill Sans', 'Gill Sans MT', Candara, Calibri, Helvetica, sans-serif;
+}

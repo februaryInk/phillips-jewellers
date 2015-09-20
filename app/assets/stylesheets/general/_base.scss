@@ -1,0 +1,15 @@
+@import 'general/reset.scss';
+
+@import 'general/definitions/fonts.scss';
+@import 'general/definitions/variables.scss';
+@import 'general/definitions/mixins.scss';
+
+body {
+    @include font-family-sans;
+}
+
+h1 {
+    @include font-family-flourish;
+    
+    font-size: 4em;
+}
