@@ -6,9 +6,22 @@
 
 @import 'general/global_modifiers.scss';
 @import 'general/header.scss';
+@import 'general/footer.scss';
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     @include font-family-sans;
+    
+    height: 100%;
+}
+
+footer,
+header, 
+main {
+    display: block;
 }
 
 h1 {
@@ -24,16 +37,30 @@ h2 {
 }
 
 .container {
+    display: block;
     margin: 0 auto;
     position: relative;
     width: $size-container-width;
 }
 
-.logo-diamond {
+.diamond {
     background-image: image_url('diamond.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
     height: 4.8125em;
     width: 7.9375em;
+}
+
+.diamond-circled {
+    background-image: image_url('diamond-circled.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 4em;
+    width: 4em;
+}
+
+#page-wrapper {
+  min-height: 100%;
+  position: relative;
 }

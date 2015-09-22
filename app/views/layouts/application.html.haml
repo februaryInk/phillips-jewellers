@@ -12,5 +12,5 @@
       = yield :header if content_for?(:header)
       %div#flash-container
         = render partial: 'shared/flash_messages.html.haml'
-      = yield
+      = yield :page_content
       = yield :footer if content_for?(:footer)
