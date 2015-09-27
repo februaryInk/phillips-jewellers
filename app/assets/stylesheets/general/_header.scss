@@ -3,6 +3,7 @@ header {
     border-bottom: 1px solid darken($color-header, 10%);
     color: $color-pearl-lusta;
     height: 10em;
+    margin-bottom: 3em;
     min-width: $size-container-width;
     width: 100%;
 }
@@ -17,9 +18,9 @@ header {
     border-radius: 0.5em;
     display: block;
     float: left;
-    font-size: 1.25em;
+    font-size: 1.125em;
     padding: 0.75em;
-    margin-left: 2em;
+    margin-left: 1em;
     
     &:hover {
         background-color: lighten($color-header, 5%);

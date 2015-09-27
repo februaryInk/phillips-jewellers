@@ -1,3 +1,7 @@
+.clearfix {
+    @include clearfix;
+}
+
 .display-inline-block {
     display: inline-block;
 }
@@ -6,8 +10,20 @@
     float: left;
 }
 
+.line-height-75px {
+    line-height: 75px;
+}
+
 .padding-footer-height {
     padding-bottom: $size-footer-height;
+}
+
+.padding-bottom-1em {
+    padding-bottom: 1em;
+}
+
+.padding-left-1em {
+    padding-left: 1em;
 }
 
 .margin-auto {
@@ -22,6 +38,14 @@
     margin-top: 0.25em;
 }
 
+.text-align-center {
+    text-align: center;
+}
+
 .vertically-center {
     @include vertically-center;
+}
+
+.width-100per {
+    width: 100%;
 }
