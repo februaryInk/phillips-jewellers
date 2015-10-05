@@ -2,6 +2,10 @@
     @include clearfix;
 }
 
+.display-inline {
+    display: inline;
+}
+
 .display-inline-block {
     display: inline-block;
 }
@@ -24,6 +28,10 @@
 
 .padding-left-1em {
     padding-left: 1em;
+}
+
+.padding-right-40em {
+    padding-right: 40em;
 }
 
 .margin-auto {

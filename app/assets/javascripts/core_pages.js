@@ -1,2 +1,29 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+$(document).ready(function() {
+    setMap('284 Main St. Coopersville MI');
+});
+
+function setMap(address) {
+  
+    var geocoder = new google.maps.Geocoder();
+
+    geocoder.geocode({ address: address }, function(results, status) {
+        
+        var center = results[0].geometry.location;
+    
+        var lat = center.lat();
+        var lng = center.lng();
+        
+        var mapOptions = {
+            center: new google.maps.LatLng(lat, lng),
+            zoom: 11,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+        
+        var marker = new google.maps.Marker({
+            map: map,
+            position: center
+        });
+    });
+}
